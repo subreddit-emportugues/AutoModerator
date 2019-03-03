@@ -57,6 +57,7 @@ set_flair: "removido"
 overwrite_flair: true
 
 ---
+
 # remove links para diversas fontes
 priority: 4
 moderators_exempt: true
