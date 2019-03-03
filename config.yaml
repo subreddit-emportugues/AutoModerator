@@ -1,0 +1,105 @@
+---
+
+# aceita apenas links para o Reddit
+priority: 1
+moderators_exempt: true
+comment: A sua postagem foi removida porque não contém um link direto para um subreddit. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+comment_stickied: true
+
+~domain: reddit.com
+
+action: spam
+action_reason: postagem sem link para sub
+set_flair: "removido"
+overwrite_flair: true
+
+---
+
+# remove postagens que não incluam nomes de subreddits no título
+priority: 2
+moderators_exempt: true
+comment: A sua postagem foi removida porque não segue o padrão de intitulação de postagens adotado neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+comment_stickied: true
+
+~title (includes): r/
+
+action: remove
+action_reason: postagem contendo um título inadequado
+set_flair: "removido"
+overwrite_flair: true
+
+---
+
+# remove postagens textuais
+type: text submission
+priority: 3
+moderators_exempt: true
+comment: A sua postagem foi removida porque postagens textuais não são permitidas neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+comment_stickied: true
+
+action: remove
+action_reason: postagem contendo texto ou cruzamento
+set_flair: "removido"
+overwrite_flair: true
+
+---
+
+# remove postagens cruzadas
+type: crosspost submission
+priority: 3
+moderators_exempt: true
+comment: A sua postagem foi removida porque postagens cruzadas não são permitidas neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+comment_stickied: true
+
+action: remove
+action_reason: postagem contendo texto ou cruzamento
+set_flair: "removido"
+overwrite_flair: true
+
+---
+# remove links para diversas fontes
+priority: 4
+moderators_exempt: true
+comment: A sua postagem foi removida porque o link que você compartilhou não é permitido neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+comment_stickied: true
+
+domain+body: [v.redd.it, youtube.com, youtu.be, vimeo.com, streamable.com, instagram.com, imgur.com, flickr.com, scribd.com, medium.com, github.com, gitlab.com, facebook.com, twitter.com, tumblr.com, wordpress.com, blogspot.com]
+
+action: spam
+action_reason: postagem contendo um link externo
+set_flair: "removido"
+overwrite_flair: true
+
+---
+
+# remove postagens feitas por contas com menos de 1 mês de existência
+priority: 5
+moderators_exempt: true
+comment: A sua postagem foi removida porque sua conta tem muito pouco tempo. Participe por mais tempo no Reddit antes começar a postar aqui.
+comment_stickied: true
+
+author:
+    account_age: < 30 days
+
+action: remove
+action_reason: conta com muito pouco tempo
+set_flair: "removido"
+overwrite_flair: true
+
+---
+
+# remove postagens feitas por contas com menos de 100 karmas no total
+priority: 5
+moderators_exempt: true
+comment: A sua postagem foi removida porque sua conta tem muito pouco karma. Participe mais do Reddit antes de começar a postar aqui.
+comment_stickied: true
+
+author:
+    combined_karma: < 100
+
+action: remove
+action_reason: conta com karma muito baixo
+set_flair: "removido"
+overwrite_flair: true
+
+---
