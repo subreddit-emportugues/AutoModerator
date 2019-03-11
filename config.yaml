@@ -1,7 +1,7 @@
 ---
 
 # aceita apenas links para o Reddit
-priority: 1
+priority: 5
 moderators_exempt: true
 comment: A sua postagem foi removida porque não contém um link direto para um subreddit. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
@@ -16,7 +16,7 @@ overwrite_flair: true
 ---
 
 # remove postagens que não incluam nomes de subreddits no título
-priority: 2
+priority: 4
 moderators_exempt: true
 comment: A sua postagem foi removida porque não segue o padrão de intitulação de postagens adotado neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
@@ -59,7 +59,7 @@ overwrite_flair: true
 ---
 
 # remove links para diversas fontes
-priority: 4
+priority: 2
 moderators_exempt: true
 comment: A sua postagem foi removida porque o link que você compartilhou não é permitido neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
@@ -74,9 +74,9 @@ overwrite_flair: true
 ---
 
 # remove postagens feitas por contas com menos de 1 mês de existência
-priority: 5
+priority: 1
 moderators_exempt: true
-comment: A sua postagem foi removida porque sua conta tem muito pouco tempo. Participe por mais tempo no Reddit antes começar a postar aqui.
+comment: A sua postagem foi removida porque sua conta tem muito pouco tempo. Participe mais do Reddit antes começar a postar aqui.
 comment_stickied: true
 
 author:
@@ -90,7 +90,7 @@ overwrite_flair: true
 ---
 
 # remove postagens feitas por contas com menos de 100 karmas no total
-priority: 5
+priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque sua conta tem muito pouco karma. Participe mais do Reddit antes de começar a postar aqui.
 comment_stickied: true
