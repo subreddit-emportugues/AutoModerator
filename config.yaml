@@ -15,6 +15,21 @@ overwrite_flair: true
 
 ---
 
+# remove links para a versão antiga do Reddit
+priority: 4
+moderators_exempt: true
+comment: A sua postagem foi removida porque contém um link para a versão antiga do Reddit (old.reddit.com). Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+comment_stickied: true
+
+domain: old.reddit.com
+
+action: remove
+action_reason: link para a versão antiga
+set_flair: "removido"
+overwrite_flair: true
+
+---
+
 # remove postagens que não incluam nomes de subreddits no título
 priority: 4
 moderators_exempt: true
