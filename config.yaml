@@ -117,3 +117,20 @@ set_flair: "removido"
 overwrite_flair: true
 
 ---
+
+#remove repostagens
+type: comment
+priority: 6
+moderators_exempt: false
+comment: Bom bô.
+
+author:
+    is_moderator: true
+body: "REEEEEEE"
+
+action: remove
+action_reason: link para sub já postado
+set_flair: "removido"
+overwrite_flair: true
+
+---
