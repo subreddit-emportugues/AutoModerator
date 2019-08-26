@@ -1,136 +1,169 @@
 # aceita apenas links para o Reddit
+type: submission
 priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque não contém um link direto para um subreddit. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem sem link para sub
 
 ~domain: reddit.com
 
 action: spam
 action_reason: postagem sem link para sub
-set_flair: "removido"
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
 
 # remove links para a versão antiga do Reddit
-priority: 2
+type: submission
+priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque contém um link para a versão antiga do Reddit (old.reddit.com). Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar link para a versão antiga
 
 domain: old.reddit.com
 
 action: remove
 action_reason: link para a versão antiga
-set_flair: "removido"
-overwrite_flair: true
-
----
-
-# remove postagens que não incluam nomes de subreddits no título
-priority: 2
-moderators_exempt: true
-comment: A sua postagem foi removida porque não segue o padrão de intitulação de postagens adotado neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
-comment_stickied: true
-
-~title (includes): r/
-
-action: remove
-action_reason: postagem contendo um título inadequado
-set_flair: "removido"
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
 
 # remove postagens textuais
 type: text submission
-priority: 3
+priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque postagens textuais não são permitidas neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem textual
 
 action: remove
-action_reason: postagem contendo texto ou cruzamento
-set_flair: "removido"
+action_reason: postagem textual
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
 
 # remove postagens cruzadas
 type: crosspost submission
-priority: 3
+priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque postagens cruzadas não são permitidas neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem cruzada
 
 action: remove
-action_reason: postagem contendo texto ou cruzamento
-set_flair: "removido"
+action_reason: postagem cruzada
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
 
 # remove links para diversas fontes
-priority: 4
+type: any
+priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque o link que você compartilhou não é permitido neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem com link externo
 
 domain+body: [v.redd.it, youtube.com, youtu.be, vimeo.com, streamable.com, instagram.com, imgur.com, flickr.com, scribd.com, medium.com, github.com, gitlab.com, facebook.com, twitter.com, tumblr.com, wordpress.com, blogspot.com]
 
 action: spam
-action_reason: postagem contendo um link externo
-set_flair: "removido"
+action_reason: postagem com link externo
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
 
-# remove postagens feitas por contas com menos de 1 mês de existência
-priority: 5
+# remove postagens que não incluam nomes de subreddits no título
+type: submission
+priority: 2
 moderators_exempt: true
-comment: A sua postagem foi removida porque sua conta tem muito pouco tempo. Participe mais do Reddit antes começar a postar aqui.
+comment: A sua postagem foi removida porque não segue o padrão de intitulação de postagens adotado neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem com título inadequado
 
-author:
-    account_age: < 30 days
+~title (includes): r/
 
 action: remove
-action_reason: conta com muito pouco tempo
-set_flair: "removido"
+action_reason: postagem com título inadequado
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
 
-# remove postagens feitas por contas com menos de 100 karmas no total
+# remove repostagens
+type: submission
 priority: 5
-moderators_exempt: true
-comment: A sua postagem foi removida porque sua conta tem muito pouco karma. Participe mais do Reddit antes de começar a postar aqui.
-comment_stickied: true
-
-author:
-    combined_karma: < 100
-
-action: remove
-action_reason: conta com karma muito baixo
-set_flair: "removido"
-overwrite_flair: true
-
----
-
-#remove repostagens
-type: comment
-priority: 6
 moderators_exempt: false
 comment: Bom bô.
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar repostagem
 
 author:
     is_moderator: true
 body: "REEEEEEE"
 
 action: remove
-action_reason: link para sub já postado
-set_flair: "removido"
+action_reason: repostagem
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
+overwrite_flair: true
+
+---
+
+# remove postagens feitas por contas com menos de 1 mês de existência
+type: any
+priority: 6
+moderators_exempt: true
+comment: A sua postagem foi removida porque sua conta tem muito pouco tempo. Participe mais do Reddit antes começar a postar aqui.
+comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem de conta nova
+
+author:
+    account_age: < 30 days
+
+action: remove
+action_reason: postagem de conta nova
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
+overwrite_flair: true
+
+---
+
+# remove postagens feitas por contas com menos de 100 karmas no total
+type: any
+priority: 6
+moderators_exempt: true
+comment: A sua postagem foi removida porque sua conta tem muito pouco karma. Participe mais do Reddit antes de começar a postar aqui.
+comment_stickied: true
+modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem de conta com pouco karma
+
+author:
+    combined_karma: < 100
+
+action: remove
+action_reason: postagem de conta com pouco karma
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
