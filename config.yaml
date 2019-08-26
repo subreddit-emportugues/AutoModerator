@@ -4,7 +4,8 @@ priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque não contém um link direto para um subreddit. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem sem link para sub
 
 ~domain: reddit.com
@@ -23,7 +24,8 @@ priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque contém um link para a versão antiga do Reddit (old.reddit.com). Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar link para a versão antiga
 
 domain: old.reddit.com
@@ -42,7 +44,8 @@ priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque postagens textuais não são permitidas neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem textual
 
 action: remove
@@ -59,7 +62,8 @@ priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque postagens cruzadas não são permitidas neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem cruzada
 
 action: remove
@@ -76,7 +80,8 @@ priority: 1
 moderators_exempt: true
 comment: A sua postagem foi removida porque o link que você compartilhou não é permitido neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem com link externo
 
 domain+body: [v.redd.it, youtube.com, youtu.be, vimeo.com, streamable.com, instagram.com, imgur.com, flickr.com, scribd.com, medium.com, github.com, gitlab.com, facebook.com, twitter.com, tumblr.com, wordpress.com, blogspot.com]
@@ -95,7 +100,8 @@ priority: 2
 moderators_exempt: true
 comment: A sua postagem foi removida porque não segue o padrão de intitulação de postagens adotado neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem com título inadequado
 
 ~title (includes): r/
@@ -108,23 +114,19 @@ overwrite_flair: true
 
 ---
 
-# remove repostagens
-type: submission
+# indica repostagens
+type: comment
 priority: 5
 moderators_exempt: false
 comment: Bom bô.
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{body}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar repostagem
 
 author:
     is_moderator: true
-body: "REEEEEEE"
 
-action: remove
-action_reason: repostagem
-set_flair:
-    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
-overwrite_flair: true
+body: "REEEEEEE"
 
 ---
 
@@ -134,7 +136,8 @@ priority: 6
 moderators_exempt: true
 comment: A sua postagem foi removida porque sua conta tem muito pouco tempo. Participe mais do Reddit antes começar a postar aqui.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem de conta nova
 
 author:
@@ -154,7 +157,8 @@ priority: 6
 moderators_exempt: true
 comment: A sua postagem foi removida porque sua conta tem muito pouco karma. Participe mais do Reddit antes de começar a postar aqui.
 comment_stickied: true
-modmail: {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem de conta com pouco karma
 
 author:
