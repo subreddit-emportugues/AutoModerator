@@ -45,7 +45,7 @@ Para alterar as mensagens para os moderadores, em [config.yml](https://github.co
 modmail:
 ```
 
-Para alterar os atitudes tomadas, em [config.yml](https://github.com/subreddit-emportugues/AutoModerator/blob/master/config.yml), edite:
+Para alterar as atitudes tomadas, em [config.yml](https://github.com/subreddit-emportugues/AutoModerator/blob/master/config.yml), edite:
 ```
 action:
 ```
