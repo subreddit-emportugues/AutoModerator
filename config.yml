@@ -116,7 +116,7 @@ overwrite_flair: true
 
 # indica repostagens
 type: comment
-priority: 5
+priority: 3
 moderators_exempt: false
 comment: Bom bô.
 modmail: |
@@ -127,47 +127,5 @@ author:
     is_moderator: true
 
 body: "REEEEEEE"
-
----
-
-# remove postagens feitas por contas com menos de 1 mês de existência
-type: any
-priority: 6
-moderators_exempt: true
-comment: A sua postagem foi removida porque sua conta tem muito pouco tempo. Participe mais do Reddit antes começar a postar aqui.
-comment_stickied: true
-modmail: |
-    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
-modmail_subject: Avaliar postagem de conta nova
-
-author:
-    account_age: < 30 days
-
-action: remove
-action_reason: postagem de conta nova
-set_flair:
-    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
-overwrite_flair: true
-
----
-
-# remove postagens feitas por contas com menos de 100 karmas no total
-type: any
-priority: 6
-moderators_exempt: true
-comment: A sua postagem foi removida porque sua conta tem muito pouco karma. Participe mais do Reddit antes de começar a postar aqui.
-comment_stickied: true
-modmail: |
-    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
-modmail_subject: Avaliar postagem de conta com pouco karma
-
-author:
-    combined_karma: < 100
-
-action: remove
-action_reason: postagem de conta com pouco karma
-set_flair:
-    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
-overwrite_flair: true
 
 ---
