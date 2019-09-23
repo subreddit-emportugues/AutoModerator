@@ -5,9 +5,9 @@ Auto-moderador do Reddit que monitora o cumprimento de quase todas as regras do 
 
 O auto-moderador usa o [u/AutoModerator](https://www.reddit.com/user/AutoModerator/) para checar uma série de detalhes em cada postagem do subreddit seguindo critérios descritos em [YAML](https://pt.wikipedia.org/wiki/YAML) no diretório "/wiki/config/automoderator" com a finalidade de remover todo conteúdo que não respeite as [regras da comunidade](https://www.reddit.com/r/EmPortugues/about/wiki/rules).
 
-As funções exercidas pelo auto-moderador garantem a remoção de postagens com links para domínios diferentes de [reddit.com](https://www.reddit.com/), com links para [old.reddit.com](https://old.reddit.com/), textuais e cruzadas e de postagens e de comentários com links para vários sites populares, com títulos sem "r/" e de contas novas e com pouco karma; além de avisar aos moderadores por `modmail`.
+As funções exercidas pelo auto-moderador garantem a remoção de postagens com links para domínios diferentes de [reddit.com](https://www.reddit.com/), com links para [old.reddit.com](https://old.reddit.com/), com títulos sem "r/", textuais e cruzadas e de postagens e de comentários com links para vários sites populares; além de avisar aos moderadores por `modmail`.
 
-As informações analisadas pelo auto-moderador são: `~domain`, `domain`, `type`, `domain+body`, `~title (includes)`, `author: account_age` e `author: combined_karma`.
+As informações analisadas pelo auto-moderador são: `~domain`, `domain`, `type`, `domain+body`, `~title (includes)`.
 
 ## Sumário
 * [Instalação](#Instalação)
