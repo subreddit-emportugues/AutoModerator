@@ -1,4 +1,4 @@
-# AutoModerator
+# Auto-moderator
 
 ## Descrição
 Auto-moderador do Reddit que monitora o cumprimento de quase todas as regras do subreddit [r/EmPortugues](https://www.reddit.com/r/EmPortugues/).
@@ -25,27 +25,27 @@ As informações analisadas pelo auto-moderador são: `~domain`, `domain`, `type
 5. e aguarde a aceitação.
 
 ## Instruções
-Para alterar os tipos de conteúdo, em [config.yml](https://github.com/subreddit-emportugues/AutoModerator/blob/master/config.yml), edite:
+Para alterar os tipos de conteúdo, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
 ```
 type:
 ```
 
-Para alterar as prioridades das regras, em [config.yml](https://github.com/subreddit-emportugues/AutoModerator/blob/master/config.yml), edite:
+Para alterar as prioridades das regras, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
 ```
 priority:
 ```
 
-Para alterar as respostas às postagens, em [config.yml](https://github.com/subreddit-emportugues/AutoModerator/blob/master/config.yml), edite:
+Para alterar as respostas às postagens, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
 ```
 comment:
 ```
 
-Para alterar as mensagens para os moderadores, em [config.yml](https://github.com/subreddit-emportugues/AutoModerator/blob/master/config.yml), edite:
+Para alterar as mensagens para os moderadores, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
 ```
 modmail:
 ```
 
-Para alterar as atitudes tomadas, em [config.yml](https://github.com/subreddit-emportugues/AutoModerator/blob/master/config.yml), edite:
+Para alterar as atitudes tomadas, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
 ```
 action:
 ```
@@ -63,24 +63,20 @@ action:
 
 ## Colaboração
 
-Você pode colaborar com o desenvolvimento deste repositório!
+Você pode colaborar com o desenvolvimento deste repositório! 
 
-[Leia as diretrizes para colaboração](/CONTRIBUTING.md) antes de [reportar um novo problema](https://github.com/subreddit-emportugues/AutoModerator/issues) ou [solicitar o recebimento de uma modificação](https://github.com/subreddit-emportugues/AutoModerator/pulls).
-
-E [confira os kanbans deste projeto](https://github.com/orgs/subreddit-emportugues/projects/6) e [participe da equipe do auto-moderador]() para saber a respeito do progresso deste repositório caso queira colaborar.
+[Confira os kanbans deste projeto](https://github.com/orgs/subreddit-emportugues/projects/6), [entre em contato com a equipe de moderação](https://reddit.com/message/compose?to=/r/EmPortugues) e [participe da equipe de desenvolvimento](https://github.com/orgs/subreddit-emportugues/teams/desenvolvedores) para saber a respeito do progresso deste repositório caso queira colaborar antes de [reportar um novo problema](https://github.com/subreddit-emportugues/auto-moderador/issues) ou [solicitar o recebimento de uma modificação](https://github.com/subreddit-emportugues/auto-moderador/pulls).
 
 ## Demonstração
 
-[Conheça o auto-moderador para entender como funciona.](https://www.reddit.com/user/AutoModerator)
-
-![](/automoderador.gif)
+[Conheça o auto-moderador para entender como funciona.](https://www.reddit.com/user/AutoModerator) ![](/automoderador.gif)
 
 ## Referências
 
 * Auto-moderador: https://www.reddit.com/user/AutoModerator
 * Comunidade: https://www.reddit.com/r/EmPortugues
 * Organização: https://github.com/subreddit-emportugues
-* Repositório: https://github.com/subreddit-emportugues/AutoModerator
+* Repositório: https://github.com/subreddit-emportugues/auto-moderador
 * Projeto: https://github.com/orgs/subreddit-emportugues/projects/6
-* Equipe:
+* Equipe: https://github.com/orgs/subreddit-emportugues/teams/desenvolvedores
 * Licença:
