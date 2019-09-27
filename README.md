@@ -1,4 +1,4 @@
-# Auto-moderator
+# Auto-moderador
 
 ## Descrição
 Auto-moderador do Reddit que monitora o cumprimento de quase todas as regras do subreddit [r/EmPortugues](https://www.reddit.com/r/EmPortugues/).
