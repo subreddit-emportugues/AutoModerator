@@ -69,7 +69,7 @@ Você pode colaborar com o desenvolvimento deste repositório!
 
 ## Demonstração
 
-[Conheça o auto-moderador para entender como funciona.](https://www.reddit.com/user/AutoModerator) ![](/auto-moderador.gif)
+[Conheça o auto-moderador para entender como o código deste repositório funciona.](https://www.reddit.com/user/AutoModerator) ![](/auto-moderador.gif)
 
 ## Referências
 
