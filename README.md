@@ -18,11 +18,10 @@ As informações analisadas pelo auto-moderador são: `~domain`, `domain`, `type
 * [Referências](#Referências)
 
 ## Instalação
-1. Baixe o repositório;
-2. copie todo o conteúdo de "config.py";
-3. cole o texto em "/wiki/config/automoderator";
-4. acesse "/about/moderators" e convide [u/AutoModerator](https://www.reddit.com/user/AutoModerator);
-5. e aguarde a aceitação.
+1. Clone o repositório;
+2. copie todo o conteúdo de "config.py" e cole o texto em "/wiki/config/automoderator";
+3. acesse "/about/moderators" e convide [u/AutoModerator](https://www.reddit.com/user/AutoModerator);
+4. e aguarde a aceitação.
 
 ## Instruções
 Para alterar os tipos de conteúdo, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
@@ -69,7 +68,7 @@ Você pode colaborar com o desenvolvimento deste repositório!
 
 ## Demonstração
 
-[Conheça o auto-moderador para entender como o código deste repositório funciona.](https://www.reddit.com/user/AutoModerator) ![](/auto-moderador.gif)
+[Conheça o auto-moderador para entender como o código deste repositório funciona.](https://www.reddit.com/user/AutoModerator)
 
 ## Referências
 
