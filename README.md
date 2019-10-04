@@ -66,4 +66,4 @@ Você pode colaborar com o desenvolvimento deste projeto!
 * Repositório: https://github.com/subreddit-emportugues/auto-moderador
 * Projeto: https://github.com/orgs/subreddit-emportugues/projects/6
 * Equipe: https://github.com/orgs/subreddit-emportugues/teams/desenvolvedores
-* Licença:
+* Licença: https://github.com/subreddit-emportugues/auto-moderador/blob/master/LICENSE
