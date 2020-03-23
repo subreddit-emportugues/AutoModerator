@@ -7,7 +7,7 @@ O auto-moderador usa o [u/AutoModerator](https://www.reddit.com/user/AutoModerat
 
 As funções exercidas pelo auto-moderador garantem a remoção de postagens com links para domínios diferentes de [reddit.com](https://www.reddit.com/), com links para [old.reddit.com](https://old.reddit.com/), com links HTTP, com links com parâmetros UTM, com títulos sem "r/", textuais e cruzadas e de postagens e de comentários com links para vários sites populares; além de avisar aos moderadores por `modmail`.
 
-As informações analisadas pelo auto-moderador são: `~domain`, `domain`, `type`, `domain+body`, `~title (includes)`.
+As informações conferidas pelo auto-moderador são: `type`, `priority`, `moderators_exempt`, `comment`, `comment_stickied`, `modmail`, `modmail_subject`, `author`, `title`, `body`, `domain`, `action`, `action_reason`, `set_flair`, `overwrite_flair`.
 
 ## Sumário
 * [Instalação](#Instalação)
@@ -58,19 +58,19 @@ Para alterar os assuntos da mensagens, em [config.yml](https://github.com/subred
 modmail_subject:
 ```
 
-Para alterar detalhes sobre os títulos, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
-```
-title:
-```
-
 Para alterar detalhes sobre os autores, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
 ```
 author:
 ```
 
-Para alterar detalhes sobre os textos, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
+Para alterar detalhes sobre os títulos, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
 ```
 title:
+```
+
+Para alterar detalhes sobre os textos, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
+```
+body:
 ```
 
 Para alterar detalhes sobre os domínios, em [config.yml](https://github.com/subreddit-emportugues/auto-moderador/blob/master/config.yml), edite:
