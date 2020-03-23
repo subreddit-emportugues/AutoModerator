@@ -11,7 +11,7 @@ modmail_subject: Avaliar postagem sem link para sub
 ~domain: reddit.com
 
 action: spam
-action_reason: postagem sem link para sub
+action_reason: sem link para sub
 set_flair:
     template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
@@ -26,12 +26,51 @@ comment: A sua postagem foi removida porque contém um link para a versão antig
 comment_stickied: true
 modmail: |
     {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
-modmail_subject: Avaliar link para a versão antiga
+modmail_subject: Avaliar postagem com link para a versão antiga
 
 domain: old.reddit.com
 
 action: remove
 action_reason: link para a versão antiga
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
+overwrite_flair: true
+
+---
+
+# remove links HTTP
+type: link submission
+priority: 1
+moderators_exempt: true
+comment: A sua postagem foi removida porque o link direciona a um endereço HTTP. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem com link HTTP
+
+~domain (includes): https://
+
+action: spam
+action_reason: link HTTP
+set_flair:
+    template_id: b9003d0a-3999-11e9-9008-0eabe0609938
+overwrite_flair: true
+
+---
+
+# remove links com parâmetros UTM
+type: link submission
+priority: 1
+moderators_exempt: true
+comment: A sua postagem foi removida porque o link contém parâmetro UTM. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
+comment_stickied: true
+modmail: |
+    {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
+modmail_subject: Avaliar postagem com link com parâmetro UTM
+
+domain (regex): \?
+
+action: spam
+action_reason: link com parâmetro UTM
 set_flair:
     template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
@@ -87,15 +126,15 @@ modmail_subject: Avaliar postagem com link externo
 domain+body: [v.redd.it, youtube.com, youtu.be, vimeo.com, streamable.com, instagram.com, imgur.com, flickr.com, scribd.com, medium.com, github.com, gitlab.com, facebook.com, twitter.com, tumblr.com, wordpress.com, blogspot.com]
 
 action: spam
-action_reason: postagem com link externo
+action_reason: link externo
 set_flair:
     template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
 
 ---
 
-# remove postagens que não incluam nomes de subreddits no título
-type: submission
+# remove postagens com títulos que não comecem com nome de um subreddit
+type: link submission
 priority: 2
 moderators_exempt: true
 comment: A sua postagem foi removida porque não segue o padrão de intitulação de postagens adotado neste sub. Leia [as regras do sub](https://www.reddit.com/r/EmPortugues/wiki/rules) e siga o padrão adotado pelas demais postagens para ter sua postagem aceita da próxima vez.
@@ -104,10 +143,10 @@ modmail: |
     {{title}} por u/{{author}} em {{subreddit}}: {{permalink}}
 modmail_subject: Avaliar postagem com título inadequado
 
-~title (includes): r/
+~title (starts-with): r/
 
 action: remove
-action_reason: postagem com título inadequado
+action_reason: título inadequado
 set_flair:
     template_id: b9003d0a-3999-11e9-9008-0eabe0609938
 overwrite_flair: true
